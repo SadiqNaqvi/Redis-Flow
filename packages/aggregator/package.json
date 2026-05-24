@@ -1,0 +1,45 @@
+{
+  "name": "@redis-flow/aggregator",
+  "version": "1.0.0",
+  "description": "Fetch data from multiple Redis keys, transform it, validate it, branch into dynamic lookups, and return exactly the shape your application needs - in as few Redis round-trips as the problem allows.",
+  
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  
+  "scripts": {
+    "test": "vitest",
+    "build": "tsup"
+  },
+
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+
+  "files": ["dist"],
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SadiqNaqvi/Redis-Flow.git"
+  },
+
+  "keywords": [
+    "redis",
+    "ioredis",
+    "aggregation",
+    "typescript",
+    "redis-pipeline",
+    "redis-toolkit"
+],
+  "author": "Sadiq Naqvi <naqvisadiqatwork@gmail.com> (https://naqvisadiq.netlify.app)",
+  "license": "MIT",
+  "type": "module",
+
+  "peerDependencies": {
+    "ioredis": "^5.10.1"
+  }
+}

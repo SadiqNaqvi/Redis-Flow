@@ -1,0 +1,39 @@
+{
+  "name": "@redis-flow/json",
+  "version": "1.0.0",
+  "description": "A typed, atomic, rollback-proof API for the RedisJSON module.",
+  
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  
+  "scripts": {
+    "test": "vitest",
+    "build": "tsup"
+  },
+  
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+
+  "files": ["dist"],
+
+  "keywords": [
+     "redis",
+     "ioredis",
+     "redis-json",
+     "typescript",
+     "atomicity",
+     "redis-toolkit"
+],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "peerDependencies": {
+    "ioredis": "^5.10.1"
+  }
+}
